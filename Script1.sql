@@ -106,3 +106,14 @@ ADD CONSTRAINT [UC_Model_Kategoria_NazwaModelu] UNIQUE ([KategoriaProduktuID], [
 ALTER TABLE [dbo].[Rozmiar]
 ADD CONSTRAINT FK_Rozmiar_KategoriaProduktu
 FOREIGN KEY ([KategoriaProduktuID]) REFERENCES [dbo].[KategoriaProduktu]([KategoriaProduktuID]);
+
+-- Stworzenie tabeli klient + włączenie unikalności adresów email i loginów
+CREATE TABLE [dbo].[Klient](
+	[KlientID] [int] IDENTITY(1,1)PRIMARY KEY NOT NULL,
+	[login] [nvarchar] (50) NOT NULL,
+	[Imie] [nvarchar] (50) NOT NULL,
+	[Nazwisko] [nvarchar] (50) NOT NULL,
+	[Email] [nvarchar] (50) NOT NULL,
+	[NumerTelefonu] [char](9) NOT NULL,
+CONSTRAINT [UC_Login] UNIQUE([Login]),
+CONSTRAINT [UC_Email] UNIQUE ([Email]));
