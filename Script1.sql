@@ -9,11 +9,10 @@ CREATE TABLE [dbo].[Produkt](
 	[DostepnoscID] [int] NOT NULL);
  
  -- Stworzenie tabeli podrzędnej KategoriaProduktu
-CREATE TABLE [dbo].[KategoriaProduktu] (
+CREATE TABLE [dbo].[KategoriaProduktu](
 	[KategoriaProduktuID] [int] IDENTITY(1,1) PRIMARY KEY NOT NULL,
-	[NazwaKategorii] [nvarchar](50) NOT NULL,
-	CONSTRAINT UQ_NazwaKategorii UNIQUE (NazwaKategorii));
-
+	[NazwaKategorii] [nvarchar](50) NOT NULL);
+ 
 -- Stworzenie tabeli podrzędnej Dostepnosc
 CREATE TABLE [dbo].[Dostepnosc](
 	[DostepnoscID] [int] IDENTITY(1,1)PRIMARY KEY NOT NULL,
@@ -118,8 +117,8 @@ CREATE TABLE [dbo].[Klient](
 	[NumerTelefonu] [char](9) NOT NULL,
 CONSTRAINT [UC_Login] UNIQUE([Login]),
 CONSTRAINT [UC_Email] UNIQUE ([Email]));
-  
--- Stworzenie tabeli Adres + połączenie z tabelą Klient na zasadzie jeden klient wiele adresów
+
+ -- Stworzenie tabeli Adres + połączenie z tabelą Klient na zasadzie jeden klient wiele adresów
 CREATE TABLE [dbo].[Adres](
 	[AdresID] [int] IDENTITY(1,1) PRIMARY KEY NOT NULL,
 	[MiastoID] [int] NOT NULL,
@@ -197,7 +196,7 @@ FOREIGN KEY ([MiastoID]) REFERENCES [dbo].[Miasto]([MiastoID]);
 ADD CONSTRAINT FK_Adres_Kod_Pocztowy
 FOREIGN KEY ([KodPocztowyID]) REFERENCES [dbo].[KodPocztowy]([KodPocztowyID]);
  
--- Polączenie tabeli Miasto z podrzędną tabelą Ulica
+-- Polączenie tabeli Adres z podrzędną tabelą Ulica
 ALTER TABLE [dbo].[Miasto]
 ADD CONSTRAINT FK_Miasto_Ulica
 FOREIGN KEY ([UlicaID]) REFERENCES [dbo].[Ulica]([UlicaID]);
