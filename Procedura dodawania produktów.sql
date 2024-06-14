@@ -1,4 +1,4 @@
-﻿-- Procedura dodawania produktów. @KategoriaProduktu i @Rozmiar, ze względu na trigerry dotyczące tych parametrów
+﻿-- Procedura dodawania produktów. @KategoriaProduktu i @Rozmiar nie przyjmuje domyslnie wartości NULL, ze względu na trigerry dotyczące tych parametrów
 CREATE PROCEDURE InsertProduktow
     @KategoriaProduktu NVARCHAR(50),
     @Producent NVARCHAR(50) = NULL, 
@@ -112,7 +112,7 @@ BEGIN
         ELSE
         BEGIN
 
--- Wstawienie nowej dostępnosci nowego produktu jeśli nie istnieje on w bazie
+-- Wstawienie dostępnosci nowego produktu jeśli nie istnieje on w bazie
             INSERT INTO Dostepnosc (DostepnaIlosc)
             VALUES (@DostepnaIlosc);
             SELECT @DostepnoscID = (SELECT TOP 1 DostepnoscID FROM Dostepnosc ORDER BY DostepnoscID DESC);

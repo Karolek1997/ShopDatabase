@@ -58,14 +58,16 @@
     <Folder Include="Properties" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Script1.sql" />
-    <None Include="Script2.sql" />
-    <None Include="Script3.sql" />
-    <None Include="Script4.sql" />
-    <None Include="Script5.sql" />
-    <None Include="Script6.sql" />
-    <None Include="Script7.sql" />
-    <None Include="Script8.sql" />
-    <None Include="Script9.sql" />
+    <None Include="Stworzenie tabeli + relacje.sql" />
+    <None Include="Dodanie kategorii produktów.sql" />
+    <None Include="Tabela walidacyjna rozmiary.sql" />
+    <None Include="Trigger sprawdzający rozmiar.sql" />
+    <None Include="Triggery sprawdzający email.sql" />
+    <None Include="Trigger sprawdzający login.sql" />
+    <None Include="Trigger obliczający cene brutto.sql" />
+    <None Include="Ustawianie VAT'u.sql" />
+    <None Include="Procedura dodawania produktów.sql" />
+    <None Include="Procedura wyboru modelu dla aplikacji GUI.sql" />
+    <None Include="Procedura wyboru kategorii produktu dla aplikacji GUI.sql" />
   </ItemGroup>
 </Project>

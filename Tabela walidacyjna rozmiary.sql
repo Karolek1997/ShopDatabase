@@ -1,4 +1,5 @@
-﻿CREATE TABLE WalidacjaRozmiarow (
+﻿-- Tabela walidacyjna rozmiary
+CREATE TABLE WalidacjaRozmiarow (
     NazwaKategorii VARCHAR(50),
     DostepneRozmiary VARCHAR(100));
 
