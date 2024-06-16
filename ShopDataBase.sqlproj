@@ -69,5 +69,9 @@
     <None Include="Procedura dodawania produktów.sql" />
     <None Include="Procedura wyboru modelu dla aplikacji GUI.sql" />
     <None Include="Procedura wyboru kategorii produktu dla aplikacji GUI.sql" />
+    <None Include="Procedura dodawania klienta.sql" />
+    <None Include="Widok klientów sklepu.sql" />
+    <None Include="Procedura dodawania ceny do produktu.sql" />
+    <None Include="Widok produktów w sklepie.sql" />
   </ItemGroup>
 </Project>
