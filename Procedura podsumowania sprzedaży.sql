@@ -1,4 +1,4 @@
-﻿-- procedura podsumowująca sprzedaż w danym roky
+﻿-- procedura podsumowująca sprzedaż w danym roku
 CREATE PROCEDURE PodsumujSprzedaz
 AS
 BEGIN
