@@ -74,5 +74,6 @@
     <None Include="Procedura dodawania ceny do produktu.sql" />
     <None Include="Widok produktów w sklepie.sql" />
     <None Include="Procedura podsumowania sprzedaży.sql" />
+    <None Include="Procedura generowania zamowienia z poziomu sql.sql" />
   </ItemGroup>
 </Project>
