@@ -15,6 +15,7 @@ Procedura służy do dodania nowego towaru do bazy danych sklepu. Podczas jej wy
 - rozmiar
 - kolor
 - dostępna ilość
+
 Baza danych jak i procedura jest tak zaprojektowana, aby nie dublować powtarzających się wpisów do tabeli np.
 - dodane zostały 4 produkty, select wykazuję, że w przypadku wykorzystania tego samego istniejącego w DB koloru czy też modelu (w tej samej kategorii produktu) pobierane jest ID.
 Rozmiar oraz model jest uzależniony od kategorii produktu.
