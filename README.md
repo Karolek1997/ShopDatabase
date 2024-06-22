@@ -6,7 +6,7 @@ Jest to przykładowy projekt bazy danych sklepu z butami (można też dodawać i
 
 # Opis procedury dodawania produktów
 
-![Example Image](dodawanieproduktow.JPG)
+![Example Image](Zdjęcia/dodawanieproduktow.JPG)
 
 Procedura służy do dodania nowego towaru do bazy danych sklepu. Podczas jej wykonywania podawane są parametry:
 - kategoria produktu
