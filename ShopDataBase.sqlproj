@@ -76,5 +76,7 @@
     <None Include="Procedura podsumowania sprzedaży.sql" />
     <None Include="Procedura generowania zamowienia z poziomu sql.sql" />
     <None Include="Procedura anulowania zamówienia z poziomu sql.sql" />
+    <None Include="procedura dodawania opisu do modelu.sql" />
+    <None Include="procedura wyboru modelu 3 dla okna dodaj opis.sql" />
   </ItemGroup>
 </Project>
