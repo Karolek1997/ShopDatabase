@@ -30,6 +30,6 @@ Procedura zaprojektowana została tak, że jeżeli istnieje już przypisana cena
 
 # Opis procedury dodawania opisu
 
-![Example Image](Zdjęcia/proceduraopisu.JPG.JPG)
+![Example Image](Zdjęcia/proceduraopisu.JPG)
 
 Procedura służy do dodawania opisu danego modelu, niezależnie od kategorii produktu. Jest to bardziej sensowne rozwiązanie, niż tworzenie opisów podczas dodawania nowych produktów, ponieważ nie będzie trzeba wklejac opisu wielokrotnie dla każdego wariantu (koloru, rozmiaru...). Procedura jest wspierana przez procedurę "procedura wyboru modelu 3 dla okna dodaj opis.sql" w aplikacji GUI, która ujednolica wybór modelu z listy rozwijanej, tak aby model nie powtarzał się, mimo że wystepuje w kilku kategoriach produktu.
