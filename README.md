@@ -2,7 +2,7 @@
 Jest to przykładowy projekt bazy danych sklepu z butami (można też dodawać inne produkty, jeśli doda się taką kategorię produktów i pasujące do niej rozmiary)
 
 # Główny schemat bazy danych
-![Example Image](schematbazydanych.JPG)
+![Example Image](Zdjęcia/schematbazydanych.JPG)
 
 # Opis procedury dodawania produktów
 
