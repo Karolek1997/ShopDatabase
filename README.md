@@ -27,3 +27,9 @@ Wywołanie procedury dla produktu istniejącego już w bazie danych powoduje zak
 
 Procedura służy do dodawania ceny netto produktu w danym modelu w danej kategorii produktu. Wykorzystywana jest w aplikacji GUI na oknie dodawania/aktualizowania ceny do wybranych produktów.
 Procedura zaprojektowana została tak, że jeżeli istnieje już przypisana cena do danego produktu, to zostaje ona zaktualizowana.
+
+# Opis procedury dodawania opisu
+
+![Example Image](Zdjęcia/proceduraopisu.JPG.JPG)
+
+Procedura służy do dodawania opisu danego modelu, niezależnie od kategorii produktu. Jest to bardziej sensowne rozwiązanie, niż tworzenie opisów podczas dodawania nowych produktów, ponieważ nie będzie trzeba wklejac opisu wielokrotnie dla każdego wariantu (koloru, rozmiaru...). Procedura jest wspierana przez procedurę "procedura wyboru modelu 3 dla okna dodaj opis.sql" w aplikacji GUI, która ujednolica wybór modelu z listy rozwijanej, tak aby model nie powtarzał się, mimo że wystepuje w kilku kategoriach produktu.
