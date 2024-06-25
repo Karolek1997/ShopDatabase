@@ -20,3 +20,10 @@ Baza danych jak i procedura jest tak zaprojektowana, aby nie dublować powtarzaj
 - dodane zostały 4 produkty, select wykazuję, że w przypadku wykorzystania tego samego istniejącego w DB koloru czy też modelu (w tej samej kategorii produktu) pobierane jest ID.
 Rozmiar oraz model jest uzależniony od kategorii produktu.
 Wywołanie procedury dla produktu istniejącego już w bazie danych powoduje zaktualizowanie (dodanie) stanów magazynowych o nową podaną wartość "dostępna ilość"
+
+# Opis procedury dodawania ceny
+
+![Example Image](Zdjęcia/proceduraceny.JPG)
+
+Procedura służy do dodawania ceny netto produktu w danym modelu w danej kategorii produktu. Wykorzystywana jest w aplikacji GUI na oknie dodawania/aktualizowania ceny do wybranych produktów.
+Procedura zaprojektowana została tak, że jeżeli istnieje już przypisana cena do danego produktu, to zostaje ona zaktualizowana.
