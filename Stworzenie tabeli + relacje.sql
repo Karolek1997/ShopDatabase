@@ -201,4 +201,10 @@ ALTER TABLE [dbo].[Miasto]
 ADD CONSTRAINT FK_Miasto_Ulica
 FOREIGN KEY ([UlicaID]) REFERENCES [dbo].[Ulica]([UlicaID]);
 
+-- Indeksowanie dla ceny netto i brutto, ponieważ są to wartości unikalne dla konkretnego produktu
+CREATE NONCLUSTERED INDEX IDX_Cena_CenaNetto ON Cena(CenaNetto);
+
+CREATE NONCLUSTERED INDEX IDX_Cena_CenaBrutto ON Cena(CenaBrutto);
+
+
 -- END

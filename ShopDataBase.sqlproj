@@ -78,5 +78,6 @@
     <None Include="Procedura anulowania zamówienia z poziomu sql.sql" />
     <None Include="procedura dodawania opisu do modelu.sql" />
     <None Include="procedura wyboru modelu 3 dla okna dodaj opis.sql" />
+    <None Include="Procedura sprawdzania cen.sql" />
   </ItemGroup>
 </Project>
